@@ -1,0 +1,33 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "tabnine.experimentalAutoImports": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.language": "en,pt,pt_BR",
+
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "css.lint.validProperties": ["composes"],
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.validProperties": ["composes"],
+  "scss.lint.unknownAtRules": "ignore",
+  "editor.fontWeight": "500",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 14,
+  "window.zoomLevel": 0.1
+}
