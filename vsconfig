@@ -1,14 +1,14 @@
 {
-  "workbench.colorTheme": "Omni",
   "tabnine.experimentalAutoImports": true,
+  
   "workbench.iconTheme": "material-icon-theme",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
-  "terminal.integrated.defaultProfile.linux": "bash",
 
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+
   "eslint.validate": ["typescript", "typescriptreact"],
   "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": false,
@@ -29,9 +29,18 @@
   "editor.fontSize": 14,
   "editor.fontFamily": "JetBrains Mono",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
   "explorer.compactFolders": false,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "workbench.productIconTheme": "fluent-icons",
+  "material-icon-theme.folders.color": "#42a5f5",
+  "material-icon-theme.saturation": 1,
+  "workbench.colorTheme": "Omni",
+  "cSpell.userWords": [
+    "chakra"
+  ],
 
 }
