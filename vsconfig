@@ -1,17 +1,21 @@
 {
   "tabnine.experimentalAutoImports": true,
-  
+
   "workbench.iconTheme": "material-icon-theme",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
 
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
 
   "eslint.validate": ["typescript", "typescriptreact"],
   "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,pt,pt_BR",
@@ -39,8 +43,5 @@
   "material-icon-theme.folders.color": "#42a5f5",
   "material-icon-theme.saturation": 1,
   "workbench.colorTheme": "Omni",
-  "cSpell.userWords": [
-    "chakra"
-  ],
-
+  "cSpell.userWords": ["chakra"]
 }
