@@ -82,7 +82,10 @@
   "workbench.productIconTheme": "fluent-icons",
   "material-icon-theme.hidesExplorerArrows": false,
   "cSpell.userWords": [
-    "hookform"
+    "dbaeumer",
+    "esbenp",
+    "hookform",
+    "tabnine"
   ],
   
 }
