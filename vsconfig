@@ -1,34 +1,45 @@
 {
   "tabnine.experimentalAutoImports": true,
 
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
+  "editor.indentSize": 2,
+
+  "editor.formatOnSave": true,
+
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
 
-  "eslint.format.enable": true,
-
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
   },
 
-  "[css]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.css": "tailwindcss"
   },
 
-  "[json]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
+  "eslint.validate": ["typescript", "typescriptreact", "html"],
+  "editor.bracketPairColorization.enabled": true,
 
-  "[html]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-
-  "[javascript]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
+  "editor.guides.bracketPairs": "active",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.language": "en,pt,pt_BR",
 
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
@@ -36,27 +47,7 @@
     }
   },
 
-  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
-
-  "eslint.options": {
-    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
-  },
-
-  "eslint.validate": [
-    "markdown",
-    "mdx",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-
-  "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnSave": false,
-  "editor.guides.bracketPairs": "active",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.language": "en,pt,pt_BR",
-  
+  "window.zoomLevel": 0,
   "css.lint.validProperties": ["composes"],
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.validProperties": ["composes"],
@@ -67,25 +58,44 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
   "explorer.compactFolders": false,
+  "material-icon-theme.folders.color": "#42a5f5",
+  "material-icon-theme.saturation": 1,
+  "cSpell.userWords": [
+    "Chackra",
+    "chakra",
+    "dayjs",
+    "fastify",
+    "Fastify",
+    "hookform",
+    "middlewares",
+    "rocketseat",
+    "tailwindcss",
+    "tsup"
+  ],
+
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
-  
-  "window.zoomLevel": 0,
-  "editor.accessibilitySupport": "off",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+
+  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
   "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.folders.color": "#42a5f5",
+  "material-icon-theme.opacity": 1,
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.files.color": "#42a5f5",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "material-icon-theme.hidesExplorerArrows": false,
-  "cSpell.userWords": [
-    "dbaeumer",
-    "esbenp",
-    "hookform",
-    "tabnine"
-  ],
-  
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+
+  "telemetry.telemetryLevel": "off",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  }
 }
