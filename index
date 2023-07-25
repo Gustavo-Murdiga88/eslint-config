@@ -1,52 +1,110 @@
 {
-  "tabnine.experimentalAutoImports": true,
-
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.tabSize": 2,
-
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "eslint-config-prettier"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
   },
-
-  "editor.formatOnSave": true,
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "jsx-a11y",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "extraFileExtensions": [
+      ".ts",
+      ".tsx",
+      ".d.ts"
+    ],
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-
-  "eslint.validate": ["typescript", "typescriptreact"],
-  "editor.bracketPairColorization.enabled": true,
-
-  "editor.guides.bracketPairs": "active",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.language": "en,pt,pt_BR",
-
-  "[javascriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "allowParens": "always",
+        "bracketSameLine": false,
+        "trailingComma": "all",
+        "endOfLine": "auto",
+        "useTabs": true,
+        "tabWidth": 2,
+        "bracketSpacing": true,
+        "singleQuote": false,
+        "jsxSingleQuote": false
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "PascalCase"
+        ]
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^(react)$/",
+          "/^(next)/",
+          "/(components)/",
+          "/^./"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "import/extensions": [
+      "error",
+      {
+        "routes": "ignorePackages"
+      }
+    ],
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": false
+      }
+    ],
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
     }
-  },
-
-  "css.lint.validProperties": ["composes"],
-  "css.lint.unknownAtRules": "ignore",
-  "scss.lint.validProperties": ["composes"],
-  "scss.lint.unknownAtRules": "ignore",
-  "editor.fontWeight": "500",
-  "editor.fontSize": 14,
-  "editor.fontFamily": "JetBrains Mono",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "JetBrains Mono",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.defaultProfile.linux": "zsh",
-
-  "explorer.compactFolders": false,
-  "window.zoomLevel": 0,
-  "workbench.productIconTheme": "fluent-icons",
-  "material-icon-theme.folders.color": "#42a5f5",
-  "material-icon-theme.saturation": 1,
-  "workbench.colorTheme": "Omni",
-  "cSpell.userWords": ["chakra"],
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
