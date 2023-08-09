@@ -1,45 +1,35 @@
 {
   "tabnine.experimentalAutoImports": true,
 
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
-  "editor.indentSize": 2,
-
-  "editor.formatOnSave": true,
-
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true, 
+    
   },
 
-  "tailwindCSS.includeLanguages": {
-    "plaintext": "html"
+  "eslint.format.enable": true,
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
-  "files.associations": {
-    "*.css": "tailwindcss"
+  "[css]":{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
-  "eslint.validate": ["typescript", "typescriptreact", "html"],
-  "editor.bracketPairColorization.enabled": true,
+  "[json]":{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
 
-  "editor.guides.bracketPairs": "active",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.language": "en,pt,pt_BR",
+  "[html]":{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  "[javascript]":{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
 
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
@@ -47,7 +37,28 @@
     }
   },
 
-  "window.zoomLevel": 0,
+  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
+
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+
+  "eslint.validate": [
+    "markdown",
+    "mdx",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": false,
+  "editor.guides.bracketPairs": "active",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.showAutocompleteSuggestions": true,
+
   "css.lint.validProperties": ["composes"],
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.validProperties": ["composes"],
@@ -58,44 +69,37 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.defaultProfile.linux": "zsh",
-
   "explorer.compactFolders": false,
-  "material-icon-theme.folders.color": "#42a5f5",
-  "material-icon-theme.saturation": 1,
-  "cSpell.userWords": [
-    "Chackra",
-    "chakra",
-    "dayjs",
-    "fastify",
-    "Fastify",
-    "hookform",
-    "middlewares",
-    "rocketseat",
-    "tailwindcss",
-    "tsup"
-  ],
-
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.opacity": 1,
-  "material-icon-theme.activeIconPack": "nest",
-  "material-icon-theme.files.color": "#42a5f5",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "fluent-icons",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "editor.accessibilitySupport": "off",
+  "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.folders.color": "#42a5f5",
+  "workbench.productIconTheme": "fluent-icons",
+  "material-icon-theme.hidesExplorerArrows": false,
+  "cSpell.userWords": [
+    "dbaeumer",
+    "esbenp",
+    "hookform",
+    "pokemon",
+    "pokemons",
+    "tabnine",
+    "zustand"
+  ],
+  
+  "symbols.hidesExplorerArrows": false,
 
-  "telemetry.telemetryLevel": "off",
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "off",
-    "strings": "off"
-  }
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  
 }
