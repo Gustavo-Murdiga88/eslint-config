@@ -89,13 +89,13 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.accessibilitySupport": "off",
   "workbench.iconTheme": "symbols",
+  "workbench.tree.indent": 12,
   "workbench.colorTheme": "Rosé Pine Moon (no italics)",
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.folders.color": "#42a5f5",
   "workbench.productIconTheme": "fluent-icons",
-  "material-icon-theme.hidesExplorerArrows": false,
   "cSpell.userWords": [
+    "airbnb",
     "dbaeumer",
+    "descricao",
     "esbenp",
     "hookform",
     "pokemon",
@@ -105,7 +105,7 @@
   ],
   
   "symbols.hidesExplorerArrows": false,
-
+  "terminal.integrated.env.windows": {},
 
   
 }
