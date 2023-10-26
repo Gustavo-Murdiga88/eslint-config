@@ -67,6 +67,7 @@
 
   "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": false,
+  "editor.guides.bracketPairsHorizontal": true,
   "editor.guides.bracketPairs": "active",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,pt,pt_BR",
@@ -106,6 +107,7 @@
   
   "symbols.hidesExplorerArrows": false,
   "terminal.integrated.env.windows": {},
-
-  
+  "dart.checkForSdkUpdates": false,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.previewFlutterUiGuides": true,
 }
