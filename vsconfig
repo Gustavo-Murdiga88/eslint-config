@@ -9,10 +9,25 @@
     
   },
 
+  "symbols.hidesExplorerArrows": false,
+  "symbols.files.associations": {
+    "*.controller.ts": "nest",
+    "*.guard.ts": "nest",
+    "*.module.ts": "nest",
+    "*.e2e.ts": "vite",
+    "*.e2e-spec.ts": "ts-test"
+  },
+
   "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+
+
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
 
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[css]":{
@@ -66,8 +81,6 @@
   ],
 
   "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnSave": false,
-  "editor.guides.bracketPairsHorizontal": true,
   "editor.guides.bracketPairs": "active",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,pt,pt_BR",
@@ -90,24 +103,39 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.accessibilitySupport": "off",
   "workbench.iconTheme": "symbols",
-  "workbench.tree.indent": 12,
   "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.folders.color": "#42a5f5",
   "workbench.productIconTheme": "fluent-icons",
+  "material-icon-theme.hidesExplorerArrows": false,
   "cSpell.userWords": [
-    "airbnb",
+    "aeonik",
+    "dayjs",
     "dbaeumer",
-    "descricao",
+    "encrypter",
+    "Encrypter",
     "esbenp",
+    "Fastify",
     "hookform",
+    "lottie",
+    "nativewind",
     "pokemon",
     "pokemons",
+    "Scoller",
+    "scroller",
+    "Scroller",
+    "scrollex",
     "tabnine",
+    "tailwindcss",
+    "usecase",
     "zustand"
   ],
-  
-  "symbols.hidesExplorerArrows": false,
-  "terminal.integrated.env.windows": {},
-  "dart.checkForSdkUpdates": false,
-  "dart.previewFlutterUiGuidesCustomTracking": true,
-  "dart.previewFlutterUiGuides": true,
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // on only using Astro
+  // "typescript.inlayHints.parameterNames.enabled": "all"
 }
