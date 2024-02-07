@@ -5,8 +5,7 @@
   "editor.tabSize": 2,
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true, 
-    
+    "source.fixAll.eslint": "explicit"
   },
 
   "symbols.hidesExplorerArrows": false,
@@ -15,7 +14,8 @@
     "*.guard.ts": "nest",
     "*.module.ts": "nest",
     "*.e2e.ts": "vite",
-    "*.e2e-spec.ts": "ts-test"
+    "*.e2e-spec.ts": "ts-test",
+    "vitest.e2e.config.ts": "vite"
   },
 
   "eslint.format.enable": true,
@@ -48,7 +48,7 @@
 
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     }
   },
 
@@ -62,7 +62,7 @@
     "editor.selectionHighlight": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
 
   "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
@@ -119,12 +119,17 @@
     "hookform",
     "lottie",
     "nativewind",
+    "Orçamenteiro",
     "pokemon",
     "pokemons",
     "Scoller",
+    "Screpper",
     "scroller",
     "Scroller",
     "scrollex",
+    "signin",
+    "sonner",
+    "supabase",
     "tabnine",
     "tailwindcss",
     "usecase",
@@ -135,6 +140,14 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "info"
+  ],
+  "codeium.enableConfig": {
+    "*": true,
+    "prisma": true
+  }
 
   // on only using Astro
   // "typescript.inlayHints.parameterNames.enabled": "all"
