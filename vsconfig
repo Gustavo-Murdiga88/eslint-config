@@ -3,9 +3,10 @@
 
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
+  "window.zoomLevel": 0,
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "always"
   },
 
   "symbols.hidesExplorerArrows": false,
@@ -19,8 +20,7 @@
   },
 
   "eslint.format.enable": true,
-    "editor.formatOnSave": true,
-
+  "editor.formatOnSave": true,
 
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
@@ -30,20 +30,20 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[css]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[json]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[html]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[javascript]":{
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[javascriptreact]": {
@@ -90,24 +90,23 @@
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.validProperties": ["composes"],
   "scss.lint.unknownAtRules": "ignore",
-  "editor.fontSize": 14,
-  "editor.fontFamily":"JetBrains Mono",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "700",
-  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "700",
+  "terminal.integrated.fontWeight": "bold",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.compactFolders": false,
-  
+
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.accessibilitySupport": "off",
-  "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.color": "#42a5f5",
-  "workbench.productIconTheme": "fluent-icons",
   "material-icon-theme.hidesExplorerArrows": false,
+  "workbench.productIconTheme": "fluent-icons",
   "cSpell.userWords": [
     "aeonik",
     "dayjs",
@@ -137,18 +136,30 @@
   ],
   "terminal.integrated.env.linux": {},
   "console-ninja.featureSet": "Community",
+
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "info"
-  ],
+
+  "errorLens.enabledDiagnosticLevels": ["warning", "info"],
   "codeium.enableConfig": {
     "*": true,
     "prisma": true
-  }
+  },
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "workbench.iconTheme": "symbols",
+  "terminal.integrated.env.windows": {},
 
+
+  "vscodesnap.containerBackground": "linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234))",
+  "vscodesnap.backgroundPalette": "custom",
+  "vscodesnap.boxShadow": "none",
+  "vscodesnap.windowControlStyle": "Gray dots",
+  "vscodesnap.showWindowTitle": true,
+  "vscodesnap.windowTitleCustomStyle": "VSCodeSnap",
+  "vscodesnap.trimEmptyLines": true
+  
+  
   // on only using Astro
   // "typescript.inlayHints.parameterNames.enabled": "all"
 }
