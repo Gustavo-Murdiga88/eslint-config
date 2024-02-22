@@ -1,14 +1,10 @@
 {
-  "tabnine.experimentalAutoImports": true,
-
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
-  "window.zoomLevel": 0,
-
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
-
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
   "symbols.hidesExplorerArrows": false,
   "symbols.files.associations": {
     "*.controller.ts": "nest",
@@ -18,44 +14,11 @@
     "*.e2e-spec.ts": "ts-test",
     "vitest.e2e.config.ts": "vite"
   },
-
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
-
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[javascriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    }
-  },
-
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -64,13 +27,16 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off"
   },
-
-  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
-
   "eslint.options": {
-    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".md",
+      ".mdx",
+      ".ts",
+      ".tsx"
+    ]
   },
-
   "eslint.validate": [
     "markdown",
     "mdx",
@@ -79,16 +45,18 @@
     "typescript",
     "typescriptreact"
   ],
-
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,pt,pt_BR",
   "cSpell.showAutocompleteSuggestions": true,
-
-  "css.lint.validProperties": ["composes"],
+  "css.lint.validProperties": [
+    "composes"
+  ],
   "css.lint.unknownAtRules": "ignore",
-  "scss.lint.validProperties": ["composes"],
+  "scss.lint.validProperties": [
+    "composes"
+  ],
   "scss.lint.unknownAtRules": "ignore",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "700",
@@ -99,13 +67,9 @@
   "terminal.integrated.fontWeight": "bold",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.compactFolders": false,
-
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.accessibilitySupport": "off",
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.folders.color": "#42a5f5",
-  "material-icon-theme.hidesExplorerArrows": false,
   "workbench.productIconTheme": "fluent-icons",
   "cSpell.userWords": [
     "aeonik",
@@ -134,32 +98,21 @@
     "usecase",
     "zustand"
   ],
-  "terminal.integrated.env.linux": {},
   "console-ninja.featureSet": "Community",
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "errorLens.enabledDiagnosticLevels": ["warning", "info"],
+  "terminal.integrated.env.linux": {},
   "codeium.enableConfig": {
     "*": true,
     "prisma": true
   },
-  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
-  "workbench.iconTheme": "symbols",
   "terminal.integrated.env.windows": {},
-
-
   "vscodesnap.containerBackground": "linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234))",
   "vscodesnap.backgroundPalette": "custom",
   "vscodesnap.boxShadow": "none",
   "vscodesnap.windowControlStyle": "Gray dots",
   "vscodesnap.showWindowTitle": true,
   "vscodesnap.windowTitleCustomStyle": "VSCodeSnap",
-  "vscodesnap.trimEmptyLines": true
-  
-  
+  "vscodesnap.trimEmptyLines": true,
+  "workbench.iconTheme": "symbols"
   // on only using Astro
   // "typescript.inlayHints.parameterNames.enabled": "all"
 }
