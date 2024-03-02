@@ -1,10 +1,8 @@
 {
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "explicit"
   },
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
   "symbols.hidesExplorerArrows": false,
   "symbols.files.associations": {
     "*.controller.ts": "nest",
@@ -12,7 +10,8 @@
     "*.module.ts": "nest",
     "*.e2e.ts": "vite",
     "*.e2e-spec.ts": "ts-test",
-    "vitest.e2e.config.ts": "vite"
+    "vitest.e2e.config.ts": "vite",
+    ".env.example": "gear"
   },
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
@@ -58,21 +57,26 @@
     "composes"
   ],
   "scss.lint.unknownAtRules": "ignore",
+  "editor.fontSize": 14,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "700",
-  "editor.fontSize": 14,
-  "editor.fontLigatures": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontWeight": "700",
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+  "debug.console.fontSize": 14,
+  "debug.console.historySuggestions": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.compactFolders": false,
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.accessibilitySupport": "off",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
   "workbench.productIconTheme": "fluent-icons",
   "cSpell.userWords": [
     "aeonik",
+    "codeium",
     "dayjs",
     "dbaeumer",
     "encrypter",
@@ -96,15 +100,25 @@
     "tabnine",
     "tailwindcss",
     "usecase",
+    "vscodesnap",
     "zustand"
   ],
-  "console-ninja.featureSet": "Community",
-  "terminal.integrated.env.linux": {},
-  "codeium.enableConfig": {
-    "*": true,
-    "prisma": true
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css"
   },
-  "terminal.integrated.env.windows": {},
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+    "tailwind.config.ts": "tailwind.config*, postcss.config*",
+    "tailwind.config.js": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community",
   "vscodesnap.containerBackground": "linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234))",
   "vscodesnap.backgroundPalette": "custom",
   "vscodesnap.boxShadow": "none",
@@ -112,7 +126,10 @@
   "vscodesnap.showWindowTitle": true,
   "vscodesnap.windowTitleCustomStyle": "VSCodeSnap",
   "vscodesnap.trimEmptyLines": true,
-  "workbench.iconTheme": "symbols"
+  "codeium.enableConfig": {
+    "*": true,
+    "prisma": true
+  }
   // on only using Astro
   // "typescript.inlayHints.parameterNames.enabled": "all"
 }
