@@ -68,11 +68,10 @@
   "debug.console.historySuggestions": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.compactFolders": false,
-  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "terminal.integrated.defaultProfile.windows": "Ubuntu-22.04 (WSL)",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.accessibilitySupport": "off",
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
   "workbench.productIconTheme": "fluent-icons",
   "cSpell.userWords": [
     "aeonik",
@@ -111,7 +110,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": true,
   "explorer.fileNesting.patterns": {
-    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, package-lock*",
     "tailwind.config.ts": "tailwind.config*, postcss.config*",
     "tailwind.config.js": "tailwind.config*, postcss.config*",
     ".env.local": ".env*",
@@ -129,7 +128,17 @@
   "codeium.enableConfig": {
     "*": true,
     "prisma": true
-  }
+  },
+  "terminal.integrated.env.windows": {},
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "git.autofetch": true,
+  "settingsSync.ignoredExtensions": [
+    "python",
+    "dart",
+    "wsl",
+    "wsl2",
+    "flutter",
+  ],
   // on only using Astro
   // "typescript.inlayHints.parameterNames.enabled": "all"
 }
